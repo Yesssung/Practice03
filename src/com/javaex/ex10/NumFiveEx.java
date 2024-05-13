@@ -6,25 +6,21 @@ public class NumFiveEx {
 
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);
-		System.out.println("숫자를 입력하세요");
-		System.out.println("숫자: ");
-		System.out.println("숫자: ");
-		System.out.println("숫자: ");
-		System.out.println("숫자: ");
-		System.out.println("숫자: ");
-		
-		int num1 = sc.nextInt();
-		int num2 = sc.nextInt();
-		int num3 = sc.nextInt();
-		int num4 = sc.nextInt();
-		int num5 = sc.nextInt();
+		int num [] = new int [5];
 		int max = 0;
-		
-		for(int i = 0; i < max; i++ ) {
-			if(max > num1)
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("숫자를 입력하세요");
+		System.out.print("숫자 : ");
+		for (int i = 0; i < num.length; i++) {
+			
+			num[i] = sc.nextInt();
+			System.out.print("숫자 : ");
+				if(max < num[i]) {
+					max = num[i];
+			}
 		}
-		
+		System.out.println("최대값은" + max + "입니다.");
 		
 		sc.close();
 	}
